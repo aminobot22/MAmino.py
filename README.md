@@ -12,8 +12,8 @@ Read The Docs: [Link Here](https://aminopy.readthedocs.io/en/latest/)
 
 #### How do I use this?
 You'll Need Python 3 To Use This Library, I Recommend Using Python 3.6 Or Earlier.
-To Install It Just Open The Command Line And Type This Command `python3 -m pip install Amino.py`
-- **NOTE:** MAKE SURE YOU TYPE `Amino.py` **NOT** `Amino` AS IT WILL INSTALL THE **WRONG** PACKAGE!
+To Install It Just Open The Command Line And Type This Command `python3 -m pip install Amino_new.py`
+- **NOTE:** MAKE SURE YOU TYPE `Amino_new.py` **NOT** `Amino` AS IT WILL INSTALL THE **WRONG** PACKAGE!
 
 #### Pip Not Working?
 0. Make Sure Pip Is Installed See: [How To Set-Up Pip](https://nitratine.net/blog/post/how-to-setup-pythons-pip/) 
