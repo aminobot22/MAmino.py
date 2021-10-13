@@ -1,17 +1,11 @@
 [//]: # (**README Improved By ODYSS3EUS**)
 [//]: # (Never Underestimate Presentation)
 
-<h1 align="center">
-  <br>
-  <a href="https://github.com/Slimakoi/Amino.py"><img src="https://cdn.discordapp.com/icons/715911730550800514/8b577d0f9d38614422601a71e91b866d.png?size=512" alt="Amino.py" width="200"></a>
-  <br>
-  Amino.py
-  <br>
-</h1>
+
 
 
 #### What Is This?
-Amino.py Is A Python API For Communicating With Amino Servers Whilst Pretending That You're An App User. This Is Mostly Accomplished By Spoofing Device Configuration Headers. It Is Also For Objectifying And Organizing Amino Response Data, So That Actually Doing Anything Is Easier.
+Amino_new.py Is A Python API For Communicating With Amino Servers Whilst Pretending That You're An App User. This Is Mostly Accomplished By Spoofing Device Configuration Headers. It Is Also For Objectifying And Organizing Amino Response Data, So That Actually Doing Anything Is Easier.
 
 ### API Reference
 Read The Docs: [Link Here](https://aminopy.readthedocs.io/en/latest/)
@@ -34,4 +28,4 @@ And Navigate To The Folder Named `Amino.py-master`
 
 #### If You Have Any Questions Join Us On Discord
 
-[![DiscordButton](https://bit.ly/32neyjM)](https://rebrand.ly/slimakoi-and-friends)
+https://discord.gg/zrY8CgdXNs
