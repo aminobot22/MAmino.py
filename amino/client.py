@@ -198,7 +198,7 @@ class Client(Callbacks, SocketHandler):
             data["o"]["target"]=f"ndc://x{comId}/chat-thread/{chatId}"
             data["o"]["params"]={"membershipStatus":1,"threadType":2}
 
-        print(data)
+        #print(data)
         sleep(2)
         return self.send(json.dumps(data))
 
@@ -580,12 +580,13 @@ class Client(Callbacks, SocketHandler):
         else: raise exceptions.SpecifyType(fileType)
 
         data = file.read()
-        response = requests.post(f"{self.apie}/g/s/media/upload", data=data, headers=self.new_headers(type=t, data=data, deviceId=self.device_id).headers, proxies=self.proxies, verify=self.certificatePath)
+        self.new_headers["Content-type"]=t
+        self.new_headers["Content-Length"]=str(len(data)        response = requests.post(f"{self.apie}/g/s/media/upload", data=data, headers=self.new_headers, proxies=self.proxies, verify=self.certificatePath)
         if json.loads(response.text)["api:statuscode"] != 0: return exceptions.CheckException(json.loads(response.text))
         else: return json.loads(response.text)["mediaValue"]
 
-    def handle_socket_message(self, data):
-        return self.resolve(data)
+    def handle_socket_message(self, data)
+        return self.resolve(data
 
     def get_eventlog(self):
         response = requests.get(f"{self.apie}/g/s/eventlog/profile?language=en", headers=self.new_headers, proxies=self.proxies, verify=self.certificatePath)
