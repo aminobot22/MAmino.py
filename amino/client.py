@@ -581,7 +581,8 @@ class Client(Callbacks, SocketHandler):
 
         data = file.read()
         self.new_headers["Content-type"]=t
-        self.new_headers["Content-Length"]=str(len(data)        response = requests.post(f"{self.apie}/g/s/media/upload", data=data, headers=self.new_headers, proxies=self.proxies, verify=self.certificatePath)
+        self.new_headers["Content-Length"]=str(len(data))
+        response = requests.post(f"{self.apie}/g/s/media/upload", data=data, headers=self.new_headers, proxies=self.proxies, verify=self.certificatePath)
         if json.loads(response.text)["api:statuscode"] != 0: return exceptions.CheckException(json.loads(response.text))
         else: return json.loads(response.text)["mediaValue"]
 
